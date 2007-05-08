@@ -1,0 +1,5 @@
+DESCRIPTION="Curses frontend for the GNU Debugger"
+HOMEPAGE="http://cgdb.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+DIFF_EXCLUDES="config"

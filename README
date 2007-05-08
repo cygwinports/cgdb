@@ -3,40 +3,41 @@ cgdb
 Curses frontend for the GNU Debugger.
 
 Runtime requirements:
-  cygwin-1.5.20-1 (>=20060604)
-  gdb-20041228-3
-  libncurses8-5.5-2
-  libreadline6-5.1-5
+  cygwin-1.5.24-2
+  gdb-20060706-2
+  libncurses8-5.5-3
+  libreadline6-5.2.2-7
 
 Build requirements:
-  cygwin-1.5.20-1 (>=20060604)
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  make-3.80-1
-  sed-4.1.4-1
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://cgdb.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/cgdb/
+  http://downloads.sourceforge.net/cgdb/
 
 -------------------------------------------
 
 Build instructions:
-  unpack cgdb-0.6.3-X-src.tar.bz2
+  unpack cgdb-0.6.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cgdb-0.6.3-X.cygport all
+  cygport ./cgdb-0.6.4-X.cygport all
 
 This will create:
-  /usr/src/cgdb-0.6.3-X-src.tar.bz2
-  /usr/src/cgdb-0.6.3-X.tar.bz2
+  /usr/src/cgdb-0.6.4-X-src.tar.bz2
+  /usr/src/cgdb-0.6.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -45,19 +46,22 @@ Files included in the binary package:
   /etc/postinstall/cgdb.sh
   /usr/bin/cgdb.exe
   /usr/share/cgdb/cgdb.txt
-  /usr/share/doc/Cygwin/cgdb-0.6.3.README
-  /usr/share/doc/cgdb-0.6.3/AUTHORS
-  /usr/share/doc/cgdb-0.6.3/COPYING
-  /usr/share/doc/cgdb-0.6.3/ChangeLog
-  /usr/share/doc/cgdb-0.6.3/INSTALL
-  /usr/share/doc/cgdb-0.6.3/NEWS
-  /usr/share/doc/cgdb-0.6.3/README
+  /usr/share/doc/Cygwin/cgdb-0.6.4.README
+  /usr/share/doc/cgdb-0.6.4/AUTHORS
+  /usr/share/doc/cgdb-0.6.4/COPYING
+  /usr/share/doc/cgdb-0.6.4/ChangeLog
+  /usr/share/doc/cgdb-0.6.4/INSTALL
+  /usr/share/doc/cgdb-0.6.4/NEWS
+  /usr/share/doc/cgdb-0.6.4/README
   /usr/share/info/cgdb.info.gz
   /usr/share/man/man1/cgdb.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.6.4-1 -----
+Version bump.
 
 ----- version 0.6.3-1 -----
 Version bump.
