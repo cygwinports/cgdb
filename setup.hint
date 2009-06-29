@@ -1,4 +1,4 @@
 category: Devel
-requires: cygwin libncurses8 libreadline6 gdb
+requires: libncurses8 libreadline6 gdb
 sdesc: "Curses frontend for the GNU Debugger"
 ldesc: "Curses frontend for the GNU Debugger"
