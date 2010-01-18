@@ -1,4 +1,4 @@
 category: Devel
-requires: libncurses8 libreadline6 gdb
+requires: libgcc1 libncurses10 libreadline7 gdb
 sdesc: "Curses frontend for the GNU Debugger"
 ldesc: "Curses frontend for the GNU Debugger"
