@@ -1,7 +1,7 @@
 DESCRIPTION="Curses frontend for the GNU Debugger"
 HOMEPAGE="http://cgdb.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
-PATCH_URI="0.6.5-aclocal-flags.patch
-           0.6.5-cygwin_conv_path.patch"
+PATCH_URI="0.6.5-cygwin_conv_path.patch"
 
+ACLOCAL_FLAGS="-I config"
 CPPFLAGS+=" -I/usr/include/ncurses"
