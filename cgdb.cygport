@@ -1,0 +1,15 @@
+NAME="cgdb"
+VERSION=0.6.7
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Curses frontend for the GNU Debugger"
+DESCRIPTION="cgdb is a lightweight curses (terminal-based) interface to the GNU
+Debugger (GDB). In addition to the standard gdb console, cgdb provides a split
+screen view that displays the source code as it executes. The keyboard
+interface is modeled after vim, so vim users should feel at home using cgdb."
+REQUIRES="gdb"
+HOMEPAGE="http://cgdb.github.com/"
+SRC_URI="http://cgdb.me/files/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.6.7-cygwin.patch"
+
+ACLOCAL_FLAGS="-I config"
