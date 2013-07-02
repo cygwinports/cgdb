@@ -1,0 +1,20 @@
+--- origsrc/cgdb-0.6.7/lib/util/fs_util.c	2013-01-12 23:13:04.000000000 -0600
++++ src/cgdb-0.6.7/lib/util/fs_util.c	2013-03-20 03:16:50.469620400 -0500
+@@ -30,13 +30,13 @@
+ #include <errno.h>
+ #endif /* HAVE_ERRNO_H */
+ 
+-#if HAVE_CYGWIN
+-#include <sys/cygwin.h>
+-#endif /* HAVE_CYGWIN */
+-
+ #include "fs_util.h"
+ #include "logger.h"
+ 
++#if HAVE_CYGWIN
++#undef HAVE_CYGWIN
++#endif /* HAVE_CYGWIN */
++
+ #define MAXLINE 4096
+ 
+ /* TODO: The cgywin_conv functions used here are deprecated. */
